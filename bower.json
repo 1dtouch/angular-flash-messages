@@ -4,8 +4,7 @@
   "main": "src/flash.js",
   "dependencies": {
     "angular": "1.2.7",
-    "angular-mocks": "v1.2.7",
-    "effroi": "git@github.com:francejs/effroi.git"
+    "angular-mocks": "v1.2.7"
   },
   "readme": "README.md",
   "repository": {

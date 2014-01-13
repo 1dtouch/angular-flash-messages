@@ -2,4 +2,6 @@ language: node_js
 
 node_js: '0.10'
 
-before_script: 'npm install grunt-cli grunt grunt-karma'
+before_script:
+	- 'npm install grunt-cli grunt grunt-karma bower'
+	- 'bower install'
