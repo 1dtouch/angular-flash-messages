@@ -1,0 +1,1 @@
+[![Build Status](https://magnum.travis-ci.com/craftsmen/angular-flash-messages.png?token=CdVCrysG3xdFiGU8XWq1&branch=dev)](https://magnum.travis-ci.com/craftsmen/angular-flash-messages)
