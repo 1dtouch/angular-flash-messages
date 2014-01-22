@@ -26,6 +26,9 @@ flash.directive('flash', function() {
     $rootScope.$on('flash:message', function(ev, message, level) {
       $rootScope.flash(message, level);
     });
+    angular.element(document).on('pjax:start', function() {
+      $scope.reset_flash();
+    })
 
     $scope.reset_flash = function() {
       $element.removeClass('hide');
