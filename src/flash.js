@@ -15,7 +15,7 @@ flash.directive('flash', function() {
     replace: true,
     template: '<div class="flash-message"></div>',
     link: function(scope, element, attr) {
-      element.text() ? element.removeClass('hide') : '';
+      element.html() ? element.removeClass('hide') : '';
       element.bind('click', function() {
         element.addClass('hide');
       });
@@ -35,13 +35,13 @@ flash.directive('flash', function() {
       $element.addClass('hide');
       $element.removeClass('success');
       $element.removeClass('error');
-      $element.text('');
+      $element.html('');
     }
 
     $rootScope.flash = function(message, level) {
       $scope.reset_flash();
       $element.addClass(level);
-      $element.text(message);
+      $element.html(message);
       message ? $element.removeClass('hide') : '';
     };
 
