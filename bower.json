@@ -9,6 +9,6 @@
   "readme": "README.md",
   "repository": {
     "type": "git",
-    "url": "git://github.com:craftsmen/angular-flash-messages.git"
+    "url": "git://github.com:1dtouch/angular-flash-messages.git"
   }
 }
