@@ -9,7 +9,7 @@ flash.factory('flash', ['$rootScope', function($rootScope) {
   return flash;
 }]);
 
-flash.directive('flash', function() {
+flash.directive('flash', function($timeout) {
   var directive = {
     restrict: 'E',
     replace: true,
@@ -19,6 +19,9 @@ flash.directive('flash', function() {
       element.bind('click', function() {
         element.addClass('hide');
       });
+      $timeout(function(){
+             element.hide();
+         }, 5000);
     }
   };
 
